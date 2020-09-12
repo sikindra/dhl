@@ -1,0 +1,170 @@
+@font-face {
+	font-family: 'AvenirNextLTPro-Demi';
+	src: url('AvenirNextLTPro-Demid41dd41dd41dd41d.eot?#iefix') format('embedded-opentype'),
+	     url('AvenirNextLTPro-Demi.otf') format('opentype'),  
+		 url('AvenirNextLTPro-Demi.woff') format('woff'),  
+		 url('AvenirNextLTPro-Demi.ttf') format('truetype'),  
+		 url('AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.skdslider{
+ width:100%;
+ position: relative;
+ display: block;
+ overflow:hidden;
+ max-height:400px;
+}
+
+.skdslider:after {
+    content: '';
+    padding-top: 50%; 
+    display: block;
+}
+
+.skdslider ul.slides{ margin:0; padding:0; list-style-type:none;}
+.skdslider ul.slides li
+{
+   display: none;
+}
+.skdslider ul.slides li img{
+    width: 100%;
+	border:0;
+}
+
+.skdslider ul.slide-navs {
+    bottom: 10px;
+    left: 50%;
+    position: absolute;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.skdslider ul.slide-navs li {
+    float: left;
+	background: url(../images/slide-bg.png) no-repeat scroll 0 0 transparent;
+	height:12px;
+	width:12px;
+	margin-right:4px;
+	cursor:pointer;
+}
+.skdslider ul.slide-navs li.current-slide {
+  background: url(../images/slide-bg-active.png) no-repeat scroll 0 0 transparent;
+}
+
+.skdslider .slide-desc {
+    background: rgba(0, 0, 0, 0.6);
+    left: 0;
+	bottom:0;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+	display:inline-block;
+}
+.skdslider .slide-desc > h2 {
+    color: #fff;
+    font-size: 30px;
+	text-align:center;
+	line-height:40px;
+	font-family: 'AvenirNextLTPro-Demi';
+}
+.skdslider .slide-desc > h2 span{
+	display:block;
+}
+.skdslider .slide-desc > p {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 15px 0;
+	text-align:center;
+}
+.skdslider .slide-desc > p span{
+	display:block;
+}
+.skdslider .slide-desc > p a.more {
+    color:#990000;
+	font-size:20px;
+	text-decoration:none;
+}
+.skdslider .slide-desc > p a.more:hover {
+text-decoration:underline;
+}
+
+.skdslider a.prev{
+    background: url(../images/left.png) no-repeat scroll 0 0 transparent;
+	width:35px;
+	height:35px;
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	left:2%;
+	margin-top:-17px;
+}
+
+.skdslider a.next{
+    background: url(../images/right.png) no-repeat scroll 0 0 transparent;
+	width:35px;
+	height:35px;
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	right:2%;
+	margin-top:-17px;
+}
+.skdslider a.prev:hover{
+    background: url(../images/left-hover.png) no-repeat scroll 0 0 transparent;
+}
+.skdslider a.next:hover{
+    background: url(../images/right-hover.png) no-repeat scroll 0 0 transparent;
+}
+
+.skdslider a.play{
+    /*background: url(../images/play.png) no-repeat scroll center center transparent;
+	width:35px;
+	height:35px;
+	display:none;
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	left:48%;
+	margin-top:-17px;*/
+}
+
+.skdslider a.pause{
+    /*background: url(../images/pause.png) no-repeat scroll center center transparent;
+	width:35px;
+	height:35px;
+	display:none;
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	left:48%;
+	margin-top:-17px;*/
+}
+/*Some Responsive CSS */
+@media screen and (max-width:1100px) {
+.skdslider {
+    display: block;
+    max-height: 230px;
+}
+
+}
+
+@media screen and (max-width:762px){
+.skdslider{
+ width:100%;
+ position: relative;
+ display: block;
+ overflow:hidden;
+ max-height:98px;
+}
+.skdslider .slide-desc{
+	display:none;
+}
+
+
+}
